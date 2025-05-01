@@ -8,7 +8,8 @@ export default function TarjetaComponent(props: Tarjeta){
     <div className="card">
       <div>
         <h2>{props.nombre} {props.apellido}</h2>
-        <p>Desarrollador Full Stack — {props.empresa} </p>
+        <p>{props.ocupacion} — {props.empresa} </p>
+        <p>{props.pais} </p>
       </div>
       <div className="info">
         <p><strong>Email:</strong> {props.correo}</p>

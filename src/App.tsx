@@ -12,6 +12,8 @@ function App() {
     nombre: 'Andres',
     apellido:'Bejarano',
     empresa:'Ceutec',
+    ocupacion:'Desarrollador Backend',
+    pais:'Honduras',
     telefono:'32321996',
     correo:'abejarano@unitec.edu'
   };
@@ -21,6 +23,8 @@ function App() {
     nombre: 'Rene',
     apellido:'Bejarano',
     empresa:'Ceutec',
+    ocupacion:'Desarrollador Full Stack',
+    pais:'Honduras',
     telefono:'87879494',
     correo:'rbejarano@unitec.edu'
   };
@@ -30,6 +34,8 @@ function App() {
     nombre: 'Luis',
     apellido:'Bejarano',
     empresa:'Ceutec',
+    ocupacion:'Desarrollador Frontend',
+    pais:'Honduras',
     telefono:'3434929',
     correo:'lbejarano@unitec.edu'
   };
@@ -38,7 +44,7 @@ function App() {
     <>
     {
       listaTarjetas.map((item, index)=>(
-        <TarjetaComponent key={index} nombre={item.nombre} apellido={item.apellido} telefono={item.telefono} empresa={item.empresa} correo={item.correo}></TarjetaComponent>
+        <TarjetaComponent key={index} nombre={item.nombre} apellido={item.apellido} telefono={item.telefono} empresa={item.empresa} ocupacion={item.ocupacion} pais={item.pais} correo={item.correo}></TarjetaComponent>
       ))
     }
     </>
